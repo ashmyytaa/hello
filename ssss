@@ -1,0 +1,73 @@
+Feature: Login (Buyer)
+
+In order to buy products from the website
+As a user
+I have to be logged in 
+
+Scenario: Loggin into an account with correct username and password
+Given I am on "User/Login"
+    When I input "ashmitha" in email
+    And I input "ash123" in password
+    And I click the submit
+    Then I get redirected to "Main/Index"
+    
+    
+   
+Feature: Login (Seller)
+
+In order to buy products from the website
+  As a user
+  I have to be logged in 
+
+  Scenario: Loggin into an account with correct username and password
+    Given I am on "User/Login"
+    When I input "ashmitha" in email
+    And I input "ash123" in password
+    And I click the submit
+    Then I get redirected to "Main/Index"
+    
+    
+    
+    Feature: Logout (Buyer)
+
+In order to exit from the website
+  As a user
+  I have to logout 
+
+  Scenario: Logout from an account
+    Given I am on "Main/Index"
+    When I hover on the navigation bar
+    And I click on Logout
+    Then I get redirected to the home page
+    
+        Feature: Logout (Seller)
+
+In order to exit from the website
+  As a user
+  I have to logout 
+
+  Scenario: Logout from an account
+    Given I am on "Main/Index"
+    When I hover on the navigation bar
+    And I click on Logout
+    Then I get redirected to the home page
+    
+    
+        Feature: Logout (Buyer)
+
+In order to exit from the website
+  As a user
+  I have to logout 
+
+  Scenario: Logout from an account
+    Given I am on "Main/Index"
+    When I hover on the navigation bar
+    And I click on Logout
+    Then I get redirected to the home page
+    
+    
+  
+    
+    
+    
+    
